@@ -5,11 +5,4 @@ import {Recipe} from './recipe';
   selector: 'rb-recipes',
   templateUrl: './recipes.component.html'
 })
-export class RecipesComponent implements OnInit {
-  selectedRecipe: Recipe;
-
-  constructor() {}
-
-  ngOnInit() {
-  }
-}
+export class RecipesComponent {}
