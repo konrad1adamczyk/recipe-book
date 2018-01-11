@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MatChipsModule } from '@angular/material/chips';
 
 
 import { AppComponent } from './app.component';
@@ -34,7 +35,8 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
   ],
   imports: [
     BrowserModule
-    , routing
+    , routing,
+    MatChipsModule
   ],
   providers: [RecipeService, ShoppingListService],
   bootstrap: [AppComponent]
