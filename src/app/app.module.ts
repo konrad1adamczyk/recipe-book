@@ -1,8 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatChipsModule } from '@angular/material/chips';
-
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header.component';
 import { DropdownDirective } from './dropdown.directive';
@@ -17,7 +15,6 @@ import {ShoppingListService} from './shopping-list/shopping-list.service';
 import {routing} from './app.routing';
 import { RecipeStartComponent } from './recipes/recipe-start.component';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
-
 
 @NgModule({
   declarations: [
@@ -34,8 +31,8 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
     RecipeEditComponent
   ],
   imports: [
-    BrowserModule
-    , routing,
+    BrowserModule,
+    routing,
     MatChipsModule
   ],
   providers: [RecipeService, ShoppingListService],
