@@ -43,4 +43,6 @@ import {HttpClientModule} from '@angular/common/http';
   providers: [RecipeService, ShoppingListService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+
+export class AppModule {
+}

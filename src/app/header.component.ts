@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {RecipeService} from './recipes/recipe.service';
 
 @Component({
@@ -7,7 +7,8 @@ import {RecipeService} from './recipes/recipe.service';
 })
 export class HeaderComponent {
 
-  constructor(private recipeService: RecipeService) { }
+  constructor(private recipeService: RecipeService) {
+  }
 
   onStore() {
     this.recipeService.storeData().subscribe(
@@ -19,6 +20,4 @@ export class HeaderComponent {
   onFetch() {
     this.recipeService.fetchData();
   }
-
-
 }
